@@ -18,7 +18,7 @@
   无法进行复用，只能及时调用recycle进行回收。
   
 - 3.0(HONEYCOMB)<=sdk<4.4(KITKAT)：
-  格式为jpg、png，并且被复用的Bitmap和申请的Bitmap，需同等宽高，inSampleSize为1，才能进行复用。
+  图片格式只能为jpg、png，被复用的Bitmap和申请的Bitmap，需同等宽高，并且inSampleSize为1，才能进行复用。
   
 - sdk>=4.4(KITKAT)：
   被复用的Bitmap的内存必须大于需要申请内存的Bitmap的内存，就能进行复用。
