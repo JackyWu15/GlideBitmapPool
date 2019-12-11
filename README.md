@@ -50,12 +50,11 @@ GlideBitmapPool.putBitmap(bitmap);
 Bitmap bitmap = Bitmap.create(width, height, config);
 //替换为
 Bitmap bitmap = GlideBitmapPool.getBitmap(width, height, config);
-```
 
 // ------ 清缓存内存 -------
 GlideBitmapPool.clearMemory();
 GlideBitmapPool.trimMemory(level);
-
+```
 
 
 
