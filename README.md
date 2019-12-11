@@ -52,6 +52,7 @@ Bitmap bitmap = Bitmap.create(width, height, config);
 Bitmap bitmap = GlideBitmapPool.getBitmap(width, height, config);
 
 // ------ 清缓存内存 -------
+
 GlideBitmapPool.clearMemory();
 GlideBitmapPool.trimMemory(level);
 ```
