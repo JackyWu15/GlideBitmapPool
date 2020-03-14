@@ -25,7 +25,7 @@
   
 ## 原理
   
-这个项目是根据Glide开源框架进行实现的，位图池的本质在GroupedLinkedMap这个类的实现。GroupedLinkedMap的成员变量HashMap，存储了双向环形队列的每个节点，而每个节点包含一个ArrayList来缓存Bitmap。根据散列和链表的数据结构，这种设计可以做到对节点的快速查找，以及位置的快速移动，是Lru算法一种很好的实现。
+这个项目是根据Glide开源框架进行实现的，位图池的本质在GroupedLinkedMap这个类的实现。GroupedLinkedMap的成员变量HashMap，存储了双向环形链表的每个节点，而每个节点包含一个ArrayList来缓存Bitmap。根据散列和链表的数据结构，这种设计可以做到对节点的快速查找，以及位置的快速移动，是Lru算法一种很好的实现。
   
 ## 使用
 
